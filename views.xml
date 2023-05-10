@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="staging banner assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/staging_banner/static/src/scss/banner.scss"/>
+        </xpath>
+    </template>
+    <template id="staging_banner" inherit_id="web.webclient_bootstrap">
+        <xpath expr="//div[@class='o_main']" position="before">
+            <div class="o_staging_banner">
+                <span>This is a staging environment</span>
+            </div>
+        </xpath>
+    </template>
+</odoo>

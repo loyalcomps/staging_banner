@@ -1,0 +1,13 @@
+.o_staging_banner {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+
+    span {
+        padding: 10px;
+        display: block;
+    }
+}
